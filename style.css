@@ -1,0 +1,85 @@
+* {
+    box-sizing: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald";
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*navbar styling*/
+.navbar {
+    background-color: rgb(220, 220, 220);
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    padding: 0vw 5vw;
+    transition: 0.5s;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar a:hover {
+    color: dimgrey;
+    
+}
+
+.navbar .container ul {
+    display: flex;
+}
+
+.navbar .container {
+    padding: 1vw;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*main body*/
+
+.main .container .main-btn {
+    border: 0.25vw solid rgb(0, 0, 0);
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    padding: 0.25vw;
+    border-radius: 0.25vw;
+    margin: 1vw 5vw;
+    margin-right: -4vw;
+    transition: 0.5s;
+}
+
+.main .container .main-btn:hover {
+    background-color: darkgrey;
+    border: 0.25vw solid rgb(118, 118, 118);
+    color:dimgrey;
+}
+
+.main .container .main-heading {
+    font-size: 6vw;
+    font-weight: 600;
+    margin: -1vw 5vw;
+    margin-bottom: -2vw;
+    
+}
+.main .container .secondary-heading {
+    font-size: 2vw;
+    font-weight: 600;
+    margin: 0 5vw;
+    margin-top: 5vw;
+}
+
+.main .container .main-text {
+    font-size: 1vw;
+    margin: 2vw 5vw;
+    width: 30vw;
+}

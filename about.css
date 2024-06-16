@@ -1,0 +1,81 @@
+* {
+    box-sizing: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald";
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*navbar styling*/
+.navbar {
+    background-color: rgb(220, 220, 220);
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    padding: 0vw 5vw;
+    transition: 0.5s;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar a:hover {
+    color: dimgrey;
+    
+}
+
+.navbar .container ul {
+    display: flex;
+}
+
+.navbar .container {
+    padding: 1vw;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*main body*/
+
+.main .container .main-img {
+    width: 25vw;
+    margin: 6.25vw 7.5vw 5vw;
+    border: 0.25vw solid black;
+    border-radius: 0.25vw;
+}
+
+.main .container .main-topic {
+    position: absolute;
+    left: 35vw;
+    top: 10vw;
+}
+
+.main .container .main-text {
+    position: absolute;
+    left: 35vw;
+    top: 13vw;
+    width: 50vw;
+}
+
+.main .container .main-topic2 {
+    position: absolute;
+    left: 35vw;
+    top: 27vw;
+}
+
+.main .container .main-text2 {
+    position: absolute;
+    left: 35vw;
+    top: 30vw;
+    width: 50vw;
+}

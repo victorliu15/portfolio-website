@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: "Oswald";
+    font-family: "Nunito";
+    overflow: hidden;
 }
 
 a {

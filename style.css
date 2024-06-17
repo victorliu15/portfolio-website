@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: "Oswald";
+    font-family: "Nunito";
+    overflow: hidden;
 }
 
 a {
@@ -16,7 +17,10 @@ a {
 
 /*navbar styling*/
 .navbar {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 ul {
@@ -24,9 +28,8 @@ ul {
 }
 
 .navbar a {
-    padding: 0vw 5vw;
+    padding: 0vw 2vw;
     transition: 0.5s;
-    font-weight: 600;
     color: black;
 }
 
@@ -47,16 +50,31 @@ ul {
 
 /*main body*/
 
-.main .container .main-btn {
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.main .container .button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .main .container .main-btn {
     border: 0.25vw solid rgb(0, 0, 0);
     font-size: 2vw;
     color: rgb(0, 0, 0);
     padding: 0.25vw;
     border-radius: 0.25vw;
-    margin: 1vw 5vw;
-    margin-right: -4vw;
     transition: 0.5s;
-}
+    margin: 0 1vw; /* Add margin to create space between buttons */
+  }
+  
 
 .main .container .main-btn:hover {
     background-color: darkgrey;
@@ -67,19 +85,17 @@ ul {
 .main .container .main-heading {
     font-size: 6vw;
     font-weight: 600;
-    margin: -1vw 5vw;
-    margin-bottom: -2vw;
-    
-}
-.main .container .secondary-heading {
-    font-size: 2vw;
-    font-weight: 600;
-    margin: 0 5vw;
-    margin-top: 5vw;
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+    transform: translateX(-50%);
 }
 
 .main .container .main-text {
     font-size: 1vw;
-    margin: 2vw 5vw;
     width: 30vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 38vh;
 }

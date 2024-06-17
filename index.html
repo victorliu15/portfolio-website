@@ -6,7 +6,7 @@
     <title>Victor's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/vlogo.png">
     <link rel="stylesheet" href="style.css"/>
 </head>
@@ -19,18 +19,29 @@
         </div>
     </nav>
 
-    <section class="main">
+    <section class="main" id="vanta-background">
         <div class="container">
-            <h3 class="secondary-heading">My name is...</h3>
-            <h1 class="main-heading">Victor Liu.</h1>
-            <h1 class="main-heading">Welcome to my portfolio!</h1>
+            <h1 class="main-heading">Victor Liu</h1>
             <p class="main-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-            
-            <a href="#" class="main-btn" id="contactBtn">Contact Me</a>
-            <a href="#" class="main-btn" id="resumeBtn">Resume</a>
+            <div class="button-container">
+                <a href="#" class="main-btn" id="contactBtn">Contact Me</a>
+                <a href="#" class="main-btn" id="resumeBtn">Resume</a>
+            </div>
         </div>
     </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script>
+    VANTA.CLOUDS({
+      el: "#vanta-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 220.00
+    })
+    </script>
     <script srs="script.js"></script>
 </body>
 </html>

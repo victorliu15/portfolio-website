@@ -19,7 +19,7 @@
         </div>
     </nav>
 
-    <section class="main">
+    <section class="main" id="vanta-background">
         <div class="container">
             <div class="card">
                 <a href="https://devpost.com/software/lingly">
@@ -39,7 +39,18 @@
             </div>
         </div>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script>
+    VANTA.CLOUDS({
+      el: "#vanta-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 220.00
+    })
+    </script>
     <script srs="projects.js"></script>
 </body>
 </html>

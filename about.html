@@ -19,28 +19,57 @@
         </div>
     </nav>
 
-    <section class="main" id="vanta-background">
+    <section class="main" id="vanta-birds">
         <div class="container">
             <img src="assets/victorphoto.jpg" class="main-img">
             <h1 class="main-topic">About Me</h1>
-            <p class="main-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            <p class="main-text">Some things I enjoy doing are competing in local hackathons, hacking in cybersecurity competitions, and playing a variety of video games. My favorite games include Minecraft Hypixel Bedwars, Valorant, Among us, and Brawlstars. Additionally, I also enjoy going out with my friends a lot, especially to nearby boba restaurants and occasional lunch/dinner restaurants such as Hotpot hero and Kpot.</p>
             <h1 class="main-topic2">Skills</h1>
-            <p class="main-text2">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-        
+            <div class="skills-container">
+                <div class="skill">
+                    <p>Tennis (75%)</p>
+                    <div class="progress-bar">
+                        <div class="progress tennis" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Violin (80%)</p>
+                    <div class="progress-bar">
+                        <div class="progress violin" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Swimming (50%)</p>
+                    <div class="progress-bar">
+                        <div class="progress swimming" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Coding (90%)</p>
+                    <div class="progress-bar">
+                        <div class="progress coding" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.clouds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
     <script>
-    VANTA.CLOUDS({
-      el: "#vanta-background",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 220.00
-    })
+        VANTA.BIRDS({
+          el: "#vanta-birds",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0xbac3cc,
+          color1: 0xb17979,
+          color2: 0x7fd4e0
+        })
     </script>
-    <script srs="about.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>

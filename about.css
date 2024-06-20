@@ -30,6 +30,7 @@ ul {
 .navbar a {
     padding: 0vw 2vw;
     transition: 0.5s;
+    font-size: 1.5vw;
     color: black;
 }
 

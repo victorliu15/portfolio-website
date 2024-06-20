@@ -30,6 +30,7 @@ ul {
 .navbar a {
     padding: 0vw 2vw;
     transition: 0.5s;
+    font-size: 1.5vw;
     color: black;
 }
 
@@ -73,7 +74,7 @@ ul {
     border-radius: 0.25vw;
     transition: 0.5s ease-in-out;
     margin: 2vh 1vw;
-    margin-top: 8vh;
+    margin-top: 13vh;
     cursor: pointer;
 }
   
@@ -96,11 +97,85 @@ ul {
 }
 
 .main .container .main-text {
-    font-size: 1vw;
+    font-size: 1.25vw;
     width: 30vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     top: 38vh;
+}
+
+.popup {
+    width: 30vw;
+    background: white;
+    border-radius: 0.5vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: left;
+    padding: 2vh 1vw;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 10;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, 75%) scale(1);
+}
+
+#contactImg {
+    width: 15vw;
+    margin-top: -13vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popupItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.popupHeading {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-right: 1vw;
+}
+
+.popupText {
+    font-size: 1.25vw;
+    color: #666;
+}
+
+#closeBtn {
+    width: 30%;
+    padding: 0.5vw 0;
+    background: dimgray;
+    color: lightgray;
+    border: 0;
+    outline: none;
+    font-size: 2vw;
+    font-weight: 600;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#closeBtn:hover {
+    transform: scale(1.05);
+}
+
+.blurred {
+    transition: 0.4s ease-in;
+    filter: blur(20px);
+    pointer-events: none;
 }

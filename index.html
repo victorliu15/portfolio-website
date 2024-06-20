@@ -6,8 +6,7 @@
     <title>Victor's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/vlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -15,36 +14,65 @@
         <div class="container">
             <a href="index.html" style="text-decoration:underline">Home</a>
             <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
         </div>
     </nav>
 
     <section class="main" id="vanta-birds">
-        <div class="container">
+        <div class="container" id="mainContent">
             <h1 class="main-heading">Victor Liu</h1>
             <p class="main-text">Hello! My name is Victor, a senior at Centennial High School, and I'm an aspiring computer science major with a passion for competitive coding, software developing, and cybersecurity. Here is my portfolio that boasts a brief introduction about myself and a project gallery you can interact with to view what I've worked on. Below you can find my contact information as well as access my resume!</p>
             <div class="button-container">
-                <a href="#" class="main-btn" id="contactBtn">Contact Me</a>
+                <a href="#" class="main-btn" id="contactBtn" onClick="openPopup()">Contact Me</a>
                 <a href="#" class="main-btn" id="resumeBtn">Resume</a>
             </div>
         </div>
+        <div class="popup" id="popup">
+            <img id="contactImg" src="assets/contactme.png">
+            <div class="popupItem">
+                <p id="emailText" class="popupHeading">Email:</p>
+                <p id="email" class="popupText">victorliu5000@gmail.com</p>
+            </div>
+            <div class="popupItem">
+                <p id="phoneText" class="popupHeading">Phone Number:</p>
+                <p id="phone" class="popupText">(443)-983-3212</p>
+            </div>
+            <div class="popupItem">
+                <p id="linkedinText" class="popupHeading">Linkedin:</p>
+                <p id="linkedin" class="popupText">linkedin.com/in/victor-liu-6495b1297</p>
+            </div>
+            <div class="popupItem">
+                <p id="devpostText" class="popupHeading">Devpost:</p>
+                <p id="devpost" class="popupText">devpost.com/victorliu5000</p>
+            </div>
+            <button id="closeBtn" type="button" onClick="closePopup()">Close</button>
+        </div>
     </section>
-
+    <script>
+        function openPopup() {
+            document.getElementById("popup").classList.add("open-popup");
+            document.getElementById("mainContent").classList.add("blurred");
+        }
+        function closePopup() {
+            document.getElementById("popup").classList.remove("open-popup");
+            document.getElementById("mainContent").classList.remove("blurred");
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
     <script>
         VANTA.BIRDS({
           el: "#vanta-birds",
           mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          backgroundColor: 0xbac3cc,
-          color1: 0xb17979,
-          color2: 0x7fd4e0
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xacacac,
+            color1: 0x83899a,
+            color2: 0x4198b1,
+            quantity: 3.00
         })
     </script>
     <script src="script.js"></script>

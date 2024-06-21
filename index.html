@@ -23,7 +23,7 @@
             <p class="main-text">Hello! My name is Victor, a senior at Centennial High School, and I'm an aspiring computer science major with a passion for competitive coding, software developing, and cybersecurity. Here is my portfolio that boasts a brief introduction about myself and a project gallery you can interact with to view what I've worked on. Below you can find my contact information as well as access my resume!</p>
             <div class="button-container">
                 <a href="#" class="main-btn" id="contactBtn" onClick="openPopup()">Contact Me</a>
-                <a href="#" class="main-btn" id="resumeBtn">Resume</a>
+                <a href="#" class="main-btn" id="resumeBtn" onClick="openResume()">Resume</a>
             </div>
         </div>
         <div class="popup" id="popup">
@@ -31,32 +31,29 @@
             <div class="popupItem">
                 <p id="emailText" class="popupHeading">Email:</p>
                 <p id="email" class="popupText">victorliu5000@gmail.com</p>
+                <button class="copyBtn" onclick="copyToClipboard('email')">📋</button>
             </div>
             <div class="popupItem">
                 <p id="phoneText" class="popupHeading">Phone Number:</p>
                 <p id="phone" class="popupText">(443)-983-3212</p>
+                <button class="copyBtn" onclick="copyToClipboard('phone')">📋</button>
             </div>
             <div class="popupItem">
                 <p id="linkedinText" class="popupHeading">Linkedin:</p>
-                <p id="linkedin" class="popupText">linkedin.com/in/victor-liu-6495b1297</p>
+                <a id="linkedin" class="popupText" href="https://linkedin.com/in/victor-liu-6495b1297" target="_blank">linkedin.com/in/victor-liu-6495b1297</a>
             </div>
             <div class="popupItem">
                 <p id="devpostText" class="popupHeading">Devpost:</p>
-                <p id="devpost" class="popupText">devpost.com/victorliu5000</p>
+                <a id="devpost" class="popupText" href="https://devpost.com/victorliu5000" target="_blank">devpost.com/victorliu5000</a>
             </div>
             <button id="closeBtn" type="button" onClick="closePopup()">Close</button>
         </div>
+        <div id="notification" class="notification">Successfully copied to clipboard</div>
+        <div class="resume" id="resumeContainer">
+            <iframe id="resume" src="assets/Victor_Resume.pdf" frameborder="0"></iframe>
+            <button id="closeResumeBtn" type="button" onClick="closeResume()">Close</button>
+        </div>
     </section>
-    <script>
-        function openPopup() {
-            document.getElementById("popup").classList.add("open-popup");
-            document.getElementById("mainContent").classList.add("blurred");
-        }
-        function closePopup() {
-            document.getElementById("popup").classList.remove("open-popup");
-            document.getElementById("mainContent").classList.remove("blurred");
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
     <script>

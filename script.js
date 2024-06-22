@@ -16,16 +16,16 @@ function closeResume() {
 }
 
 function copyToClipboard(elementId) {
-    var text = document.getElementById(elementId).innerText;
+    let text = document.getElementById(elementId).innerText;
     navigator.clipboard.writeText(text).then(function() {
         showNotification();
     }).catch(function(error) {
-        console.error('Error copying text: ', error);
+        console.error(error);
     });
 }
 
 function showNotification() {
-    var notification = document.getElementById('notification');
+    let notification = document.getElementById('notification');
     notification.classList.add('show');
     setTimeout(function() {
         notification.classList.remove('show');

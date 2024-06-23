@@ -86,13 +86,20 @@ function darkMode() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    lightMode();
+    const savedMode = localStorage.getItem("mode");
+    if (savedMode === "dark") {
+        darkMode();
+        document.getElementById("toggleMode").checked = true;
+    } else {
+        lightMode();
+    }
     document.getElementById("toggleMode").addEventListener("change", function() {
         if (this.checked) {
             darkMode();
-        }
-        else {
+            localStorage.setItem("mode", "dark");
+        } else {
             lightMode();
+            localStorage.setItem("mode", "light");
         }
     });
 });

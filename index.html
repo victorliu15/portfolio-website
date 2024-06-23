@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="index.html" style="text-decoration:underline">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html" style="text-decoration:underline" id="home-navbar">Home</a>
+            <a href="about.html" id="about-navbar">About</a>
         </div>
     </nav>
 
     <section class="main" id="vanta-birds">
         <div class="container" id="mainContent">
-            <h1 class="main-heading">Victor Liu</h1>
-            <p class="main-text">Hello! My name is Victor, a senior at Centennial High School, and I'm an aspiring computer science major with a passion for competitive coding, software developing, and cybersecurity. Here is my portfolio that boasts a brief introduction of myself and what I enjoy doing a lot. Below you can find my contact information as well as a copy of my resume.</p>
+            <h1 id="name" class="main-heading">Victor Liu</h1>
+            <p id="intro" class="main-text">Hello! My name is Victor, a senior at Centennial High School, and I'm an aspiring computer science major with a passion for competitive coding, software developing, and cybersecurity. Here is my portfolio that boasts a brief introduction of myself and what I enjoy doing a lot. Below you can find my contact information as well as a copy of my resume.</p>
             <div class="button-container">
                 <a href="#" class="main-btn" id="contactBtn" onClick="openPopup()">Contact Me</a>
                 <a href="#" class="main-btn" id="resumeBtn" onClick="openResume()">Resume</a>
@@ -54,25 +54,13 @@
             <iframe id="resume" src="assets/Victor_Resume.pdf" frameborder="0"></iframe>
             <button id="closeResumeBtn" type="button" onClick="closeResume()">Close</button>
         </div>
+        <div class="toggle-mode">
+            <input type="checkbox" id="toggleMode"/>
+            <label for="toggleMode"></label>
+        </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
-    <script>
-        VANTA.BIRDS({
-          el: "#vanta-birds",
-          mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            backgroundColor: 0xacacac,
-            color1: 0x83899a,
-            color2: 0x4198b1,
-            quantity: 3.00
-        })
-    </script>
     <script src="script.js"></script>
 </body>
 </html>

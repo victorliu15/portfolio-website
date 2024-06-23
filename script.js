@@ -31,3 +31,68 @@ function showNotification() {
         notification.classList.remove('show');
     }, 2000);
 }
+
+
+function lightMode() {
+    window.vantaEffect = VANTA.BIRDS({
+        el: "#vanta-birds",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0xacacac,
+        color1: 0x83899a,
+        color2: 0x4198b1,
+        quantity: 3.00
+    });
+    document.getElementById("navbar").style.backgroundColor = "rgb(220, 220, 220, 0.5)";
+    document.getElementById("home-navbar").style.color = "black";
+    document.getElementById("about-navbar").style.color = "black";
+    document.getElementById("name").style.color = "black";
+    document.getElementById("intro").style.color = "black";
+    document.getElementById("contactBtn").style.color = "black";
+    document.getElementById("resumeBtn").style.color = "black";
+    document.getElementById("contactBtn").style.borderColor = "black";
+    document.getElementById("resumeBtn").style.borderColor = "black";
+}
+
+function darkMode() {
+    window.vantaEffect = VANTA.BIRDS({
+        el: "#vanta-birds",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x7192f,
+        color1: 0xff0000,
+        color2: 0xd1ff,
+        quantity: 3.00
+    });
+    document.getElementById("navbar").style.backgroundColor = "rgb(46, 59, 78, 0.5)";
+    document.getElementById("home-navbar").style.color = "white";
+    document.getElementById("about-navbar").style.color = "white";
+    document.getElementById("name").style.color = "white";
+    document.getElementById("intro").style.color = "white";
+    document.getElementById("contactBtn").style.color = "white";
+    document.getElementById("resumeBtn").style.color = "white";
+    document.getElementById("contactBtn").style.borderColor = "white";
+    document.getElementById("resumeBtn").style.borderColor = "white";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    lightMode();
+    document.getElementById("toggleMode").addEventListener("change", function() {
+        if (this.checked) {
+            darkMode();
+        }
+        else {
+            lightMode();
+        }
+    });
+});

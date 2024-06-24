@@ -48,6 +48,7 @@ function lightMode() {
     document.getElementById("swimmingProgress").style.backgroundColor = "#4ca2af";
     document.getElementById("codingProgress").style.backgroundColor = "#4ca2af";
     document.getElementById("profilePic").style.borderColor = "black";
+    document.getElementById("toggleBox").style.border = "0.5vh solid black";
 }
 
 function darkMode() {
@@ -80,6 +81,7 @@ function darkMode() {
     document.getElementById("swimmingProgress").style.backgroundColor = "rgb(100, 100, 255)";
     document.getElementById("codingProgress").style.backgroundColor = "rgb(100, 100, 255)";
     document.getElementById("profilePic").style.borderColor = "white";
+    document.getElementById("toggleBox").style.border = "0.5vh solid white";
 }
 
 document.addEventListener("DOMContentLoaded", function() {

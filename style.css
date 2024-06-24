@@ -95,7 +95,6 @@ input:checked + label:after {
     transform: translateX(135%);
     background: linear-gradient(180deg, #777, black);
 }
-
 /*main body*/
 
 .main {

@@ -11,65 +11,53 @@
     <link rel="stylesheet" href="about.css"/>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="index.html">Home</a>
-            <a href="about.html" style="text-decoration:underline">About</a>
+            <a href="index.html" id="home-navbar">Home</a>
+            <a href="about.html" style="text-decoration:underline" id="about-navbar">About</a>
         </div>
     </nav>
 
     <section class="main" id="vanta-birds">
         <div class="container">
-            <img src="assets/victorphoto.jpg" class="main-img">
-            <h1 class="main-topic">About Me</h1>
-            <p class="main-text">Outside of simply programming, I enjoy competiting in local hackathons and hacking in online Cyber Security CTF competitions. In my spare time, I play video games with my friends, such as Minecraft and Valorant, and practice tennis and the violin as well. Every now and then you can find me feasting in all you can eat hotpot and kpot restaurants or working away at a boba shop.</p>
-            <h1 class="main-topic2">Skills</h1>
+            <img id="profilePic" src="assets/victorphoto.jpg" class="main-img">
+            <h1 id="aboutHeading" class="main-topic">About Me</h1>
+            <p id="aboutText" class="main-text">Outside of simply programming, I enjoy competiting in local hackathons and hacking in online Cyber Security CTF competitions. In my spare time, I play video games with my friends, such as Minecraft and Valorant, and practice tennis and the violin as well. Every now and then you can find me feasting in all you can eat hotpot and kpot restaurants or working away at a boba shop.</p>
+            <h1 id="skillsHeading" class="main-topic2">Skills</h1>
             <div class="skills-container">
                 <div class="skill">
-                    <p>Tennis (75%)</p>
+                    <p id="tennisSkill">Tennis (75%)</p>
                     <div class="progress-bar">
-                        <div class="progress tennis" style="width: 0%;"></div>
+                        <div class="progress tennis" id="tennisProgress" style="width: 0%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Violin (80%)</p>
+                    <p id="violinSkill">Violin (80%)</p>
                     <div class="progress-bar">
-                        <div class="progress violin" style="width: 0%;"></div>
+                        <div class="progress violin" id="violinProgress" style="width: 0%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Swimming (50%)</p>
+                    <p id="swimmingSkill">Swimming (50%)</p>
                     <div class="progress-bar">
-                        <div class="progress swimming" style="width: 0%;"></div>
+                        <div class="progress swimming" id="swimmingProgress" style="width: 0%;"></div>
                     </div>
                 </div>
                 <div class="skill">
-                    <p>Coding (90%)</p>
+                    <p id="codingSkill">Coding (90%)</p>
                     <div class="progress-bar">
-                        <div class="progress coding" style="width: 0%;"></div>
+                        <div class="progress coding" id="codingProgress" style="width: 0%;"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="toggle-mode">
+            <input type="checkbox" id="toggleMode"/>
+            <label for="toggleMode"></label>
+        </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
-    <script>
-        VANTA.BIRDS({
-          el: "#vanta-birds",
-          mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            backgroundColor: 0xacacac,
-            color1: 0x83899a,
-            color2: 0x4198b1,
-            quantity: 3.00
-        })
-    </script>
     <script src="about.js"></script>
 </body>
 </html>

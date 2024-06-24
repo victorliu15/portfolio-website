@@ -46,7 +46,7 @@ function lightMode() {
         backgroundColor: 0xacacac,
         color1: 0x83899a,
         color2: 0x4198b1,
-        quantity: 3.00
+        quantity: 2.00
     });
     document.getElementById("navbar").style.backgroundColor = "rgb(220, 220, 220, 0.5)";
     document.getElementById("home-navbar").style.color = "black";
@@ -72,7 +72,7 @@ function darkMode() {
         backgroundColor: 0x7192f,
         color1: 0xff0000,
         color2: 0xd1ff,
-        quantity: 3.00
+        quantity: 2.00
     });
     document.getElementById("navbar").style.backgroundColor = "rgb(46, 59, 78, 0.5)";
     document.getElementById("home-navbar").style.color = "white";

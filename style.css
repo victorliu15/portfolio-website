@@ -49,6 +49,8 @@ ul {
     text-align: center;
 }
 
+/* dark and light mode toggle */
+
 label {
     position: absolute;
     top: 92vh;
@@ -93,7 +95,6 @@ input:checked + label:after {
     transform: translateX(135%);
     background: linear-gradient(180deg, #777, black);
 }
-
 
 /*main body*/
 

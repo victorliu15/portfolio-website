@@ -126,7 +126,6 @@ input:checked + label:after {
   
 
 .main .container .main-btn:hover {
-    background-color: darkgray;
     border: 0.25vw solid rgb(50, 50, 50);
     color:rgb(50, 50, 50);
     transform: scale(1.02);

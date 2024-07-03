@@ -57,7 +57,6 @@ function lightMode() {
     document.getElementById("resumeBtn").style.color = "black";
     document.getElementById("contactBtn").style.borderColor = "black";
     document.getElementById("resumeBtn").style.borderColor = "black";
-    document.getElementById("toggleBox").style.border = "0.5vh solid black";
 }
 
 function darkMode() {
@@ -84,7 +83,6 @@ function darkMode() {
     document.getElementById("resumeBtn").style.color = "white";
     document.getElementById("contactBtn").style.borderColor = "white";
     document.getElementById("resumeBtn").style.borderColor = "white";
-    document.getElementById("toggleBox").style.border = "0.5vh solid white";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
